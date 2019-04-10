@@ -3,16 +3,42 @@
 - Node.js를 위한 기본 패키지 관리자. 소스코드와 관리, 라이브러리 설치, 업데이트 및 제거
 
 ## React
-- Front-end Framework
+- Front-end Library, Not Framework
+- Virtual DOM
 
 ### 1. Compnent
-- UI를 구성하는 개별 요
+- UI를 구성하는 개별 요소
+
 ### 2. JSX
-- React를 위한 새로운 자바스크립트 문법
-- UI 요소를 설명하기 위해 React와 함께 사용되는 Js 구문 확장, SX 코드는 일반 JavaScript로 트랜스파일 되어야 함
-### 3.Webpack
+- JS + XML
+- React를 위한 새로운 자바스크립트 문법, 표현식
+- UI 요소를 설명하기 위해 React와 함께 사용되는 Js 구문 확장, JSX 코드는 일반 JavaScript로 트랜스파일 되어야 함
+- Babel을 통해 컴파일된다.
+
+- style은 camelCase
+
+```jsx
+ReactDOM.render(
+  <h1>Hello, world!</h1>,
+  document.getElementById('root')
+);
+
+```
+
+### 3. Props
+
+- 컴포넌트 내부의 immutable data를 처리할 때 사용
+
+### 4. state
+
+- 컴포넌트에서 유동적인 데이터를 보여줄 때 필수
+- 초기값 설정 필수, 생성자에서 this.state={} 로 설정
+- jsx 내부에 {this.state.stateName}
+- 값을 수정 할 때는 this.setState....
+
+### 5.Webpack
 - webpack은 브라우저에서 실행될 수 있도록 JavaScript 파일을 번들로 제공. 
-- 모듈 번들러이.
+- 모듈 번들러
 - 다른 리소스와 자산으로 변환하거나 패키지화할 수 있다. 
 - 종종 JSX 또는 TypeScript 코드를 일반 JavaScript로 트랜스파일하도록 Babel 또는 TypeScript 등의 컴파일러를 지정하는 데 사용됨.
 
@@ -59,7 +85,10 @@
  npm install --save-dev react-hot-loader
  ```
  
+ ### link
+ - https://codepen.io/
  
  ### ref 
+  - https://reactjs.org/
   - https://pro-self-studier.tistory.com/19 
   - https://www.robinwieruch.de/minimal-react-webpack-babel-setup/
